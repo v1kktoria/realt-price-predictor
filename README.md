@@ -67,7 +67,24 @@ pip install -r requirements.txt
 ```
 
 ### 2. Подготовка фронтенда
-... (остальное без изменений) ...
+```bash
+# Перейдите в директорию фронтенда
+cd frontend
+
+# Установите зависимости
+npm install
+
+# Запустите проект
+npm run dev
+```
+
+### 3. Запуск API
+```bash
+# Находясь в папке backend (с активированным venv)
+uvicorn main:app --reload
+```
+*   **Фронтенд:** [http://localhost:3000](http://localhost:3000)
+*   **Бэкенд (API):** [http://localhost:8000](http://localhost:8000)
 
 ---
 
@@ -83,6 +100,7 @@ pip install -r requirements.txt
 *   `data_scraping_pipeline.ipynb` — Скрипт для автоматического сбора данных (парсинг) с realt.by.
 *   `training_pipeline.ipynb` — Процесс предобработки данных и обучения ML-модели.
 
-
 ---
 
+## 📝 Примечание
+Для корректной работы аналитики и предсказаний убедитесь, что файлы `best_model.pkl` и `flats_realtby.xlsx` находятся в корневой директории проекта.

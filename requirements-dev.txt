@@ -1,0 +1,9 @@
+# Зависимости для разработки, обучения и парсинга
+-r backend/requirements.txt
+selenium
+webdriver-manager
+beautifulsoup4
+jupyter
+matplotlib
+seaborn
+plotly
